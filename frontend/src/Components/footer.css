@@ -1,0 +1,22 @@
+.Footer {
+    background-color:  #e8910e;
+    color: white;
+    width:auto;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.localizacion{
+    margin-left: 35px;
+
+}
+.logoInstagram{
+    margin-right: 25px;
+
+}
+
+.telefonoContacto{
+    margin-left: 2px;
+}
