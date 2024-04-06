@@ -1,4 +1,6 @@
 import "./footer.css";
+import LogoTelefono from './LogoTelefono';
+
 
 export const Footer = () => {
   return (
@@ -14,11 +16,7 @@ export const Footer = () => {
           <span>Av. Castilla, 18, 33550 Cangas de Onis, Asturias</span> {/* Texto junto al logo del mapa */}
         </div>
         <div className="telefonoContacto">
-          <img
-            src="ruta-al-logo-telefono.png"
-            alt="Logo Teléfono"
-            className="logoTelefono"
-          />
+          < LogoTelefono/>
           <span>984 51 71 16</span> {/* Texto junto al logo del teléfono */}
         </div>
         </article>

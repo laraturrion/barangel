@@ -8,8 +8,15 @@
     align-items: center;
 }
 
+.footerIzquierdo{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Mohave", sans-serif;
+}
 .localizacion{
     margin-left: 35px;
+    margin-right:50px;
+   
 
 }
 .logoInstagram{
