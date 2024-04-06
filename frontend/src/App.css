@@ -1,11 +1,5 @@
 .bodyApp {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.fotoPortada {
-    width: 70vw;
-    
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

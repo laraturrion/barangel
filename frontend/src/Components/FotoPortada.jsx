@@ -1,6 +1,6 @@
 export default function FotoPortada() {
   return (
-    <div>
+    <div className="contenedorPortada">
       <img
         src="../src/assets/LogoAngel.png"
         alt="Bar Angel Logo"
