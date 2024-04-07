@@ -25,7 +25,7 @@ export const Footer = () => {
         </article>
         <article className="Instagram">
           <div className="logoInstagram">
-            <a href="">
+            <a href="https://www.instagram.com/barrestauranteangel18/">
               <img
                 src="../../src/assets/LogoInstagram.svg"
                 alt="Logo Instagram"

@@ -7,6 +7,7 @@
   height: 76px;
   width: 100vw;
   gap:10px;
+  
 }
 
 .tituloLogo {
@@ -26,8 +27,10 @@
 }
 .seccionEventos{
     margin-right: 40px;
+    cursor:pointer;
 }
 
 .seccionContacto{
     margin-right: 25px;
+    cursor:pointer;
 }
