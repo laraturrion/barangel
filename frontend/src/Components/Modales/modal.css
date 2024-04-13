@@ -1,0 +1,45 @@
+.containerModal,
+.precios {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerModal {
+  color: black;
+  align-items: center;
+  background-image: url("../../../src/assets/medioLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3vw 2vw;
+}
+
+.tituloModal {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.tituloInglesModal,
+.tituloInglesModal span {
+  font-family: "Sansita Swashed", "Inter";
+  font-size: 1.5rem;
+  margin-bottom: 3vh;
+}
+
+.precios {
+  width: 100%;
+  gap: 15px;
+}
+
+.comidaPrecio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comidaPrecio p {
+  font-family: "Inter", sans-serif;
+}
+
+.amarillo {
+  color: #e8910e;
+}

@@ -3,8 +3,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Slider.css";
 import { Navigation } from "swiper/modules";
+import RacionesModal from "../Modales/RacionesModal";
+import { useState } from "react";
+
 
 export default function Slider() {
+
+  const [openRaciones, setOpenRaciones] = useState(false);
+  const handleOpenRaciones = () => setOpenRaciones(true);
+  const handleCloseRaciones = () => setOpenRaciones(false);
+
   return (
     <div>
       <Swiper
@@ -13,10 +21,11 @@ export default function Slider() {
         modules={[Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide onClick={handleOpenRaciones}>
           <img src="../../src/assets/raciones.jpg" alt="" />
           <p>RACIONES</p>
         </SwiperSlide>
+        <RacionesModal open={openRaciones} handleClose={handleCloseRaciones} />
         <SwiperSlide>
           <img src="../../src/assets/platosCombinados.jpg" alt="" />
           <p>PLATOS COMBINADOS</p>
