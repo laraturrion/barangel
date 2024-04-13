@@ -15,39 +15,39 @@ export default function Slider() {
       >
         <SwiperSlide>
           <img src="../../src/assets/platosCombinados.jpg" alt="" />
-          <p>TEXTO</p>
+          <p>PARA PICAR</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src="../../src/assets/platosCombinados.jpg" alt="" />
-          <p>TEXTO</p>
+          <p>CAZUELAS</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src="../../src/assets/platosCombinados.jpg" alt="" />
-          <p>TEXTO</p>
+          <p>ENSALADAS</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src="../../src/assets/platosCombinados.jpg" alt="" />
-          <p>TEXTO</p>
+          <p>PLATOS VEGANOS</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src="../../src/assets/platosCombinados.jpg" alt="" />
-          <p>TEXTO</p>
+          <p>PLATOS INFANTILES</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src="../../src/assets/platosCombinados.jpg" alt="" />
-          <p>TEXTO</p>
+          <p>DE CUCHARA</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src="../../src/assets/platosCombinados.jpg" alt="" />
-          <p>TEXTO</p>
+          <p>PESCADO</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src="../../src/assets/platosCombinados.jpg" alt="" />
-          <p>TEXTO</p>
+          <p>PLATO ESPECIAL</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src="../../src/assets/platosCombinados.jpg" alt="" />
-          <p>TEXTO</p>
+          <p>CARNES</p>
         </SwiperSlide>
       </Swiper>
     </div>
