@@ -1,0 +1,34 @@
+.Footer {
+  background-color: #e8910e;
+  color: white;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  flex-grow: 1; 
+}
+
+.footerIzquierdo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 480px;
+  margin-left: 3vw;
+  font-family: "Mohave", sans-serif;
+}
+.localizacion {
+  cursor: pointer;
+}
+
+.logoInstagram {
+  margin-right: 25px;
+}
+
+.logoMapa,
+.logoTelefono {
+  width: 15px;
+  margin-right: 10px;
+}

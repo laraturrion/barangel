@@ -1,8 +1,8 @@
 import "./eventos.css";
-import barAngel from "../../src/assets/videos/barAngel.mp4";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
-import FotoPortada from "./FotoPortada";
+import barAngel from "../../../src/assets/videos/barAngel.mp4";
+import { Header } from "../../Components/Header/Header";
+import { Footer } from "../../Components/Footer/Footer";
+import FotoPortada from "../../Components/FotoPortada/FotoPortada";
 
 function Eventos() {
   return (

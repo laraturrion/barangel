@@ -1,0 +1,28 @@
+.containerContacto p{
+  font-size: 20px;
+}
+
+.cabeceraContacto {
+  margin-top: 10px;
+  text-align: center;
+}
+.visitanosContacto {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.redesContacto {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.telefonoContacto {
+  margin-top: 10px;
+  text-align: center;
+}
+.horario {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}

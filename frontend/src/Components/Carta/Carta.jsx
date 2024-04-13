@@ -1,5 +1,5 @@
-import FotoPortada from "./FotoPortada";
-import Slider from "./Slider";
+import FotoPortada from "../FotoPortada/FotoPortada";
+import Slider from "../Slider/Slider";
 import "./carta.css";
 
 export default function Carta() {
