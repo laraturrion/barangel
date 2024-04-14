@@ -21,7 +21,7 @@ function Eventos() {
           que también nos especializamos en crear momentos mágicos para
           celebraciones inolvidables, especialmente los cumpleaños infantiles.
           <br></br>
-          Contacta con nosotros para un cumpleaños inolvidable
+          Contacta con nosotros para un cumpleaños inolvidable.
           </p>
         </span>
         <div className="videoAngel">
