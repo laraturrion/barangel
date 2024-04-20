@@ -34,10 +34,23 @@
 .comidaPrecio {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .comidaPrecio p {
   font-family: "Inter", sans-serif;
+  text-align: justify;
+}
+
+.nombreComidas {
+  width: 80%;
+}
+
+.comidaIngles {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  margin-top: -10px;
+  color: rgba(53, 53, 53, 0.801);
 }
 
 .amarillo {

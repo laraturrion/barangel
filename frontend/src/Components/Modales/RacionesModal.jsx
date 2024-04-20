@@ -27,42 +27,52 @@ export default function RacionesModal({ open, handleClose }) {
     >
       <Box sx={style}>
         <div className="containerModal">
-          <p className="tituloModal">RACIONES</p>
+          <p className="tituloModal">ENSALADAS</p>
           <p className="tituloInglesModal">
-            ⎯ <span className="amarillo">S</span>ervings ⎯
+            ⎯ <span className="amarillo">Salads</span> ⎯
           </p>
           <div className="precios">
             <div className="comidaPrecio">
-              <p>Chorizo a la sidra</p>
-              <p>9 €</p>
-            </div>
-            <div className="comidaPrecio">
-              <p>Patatas 3 salsas</p>
-              <p>8 €</p>
-            </div>
-            <div className="comidaPrecio">
-              <p>Croquetas caseras</p>
-              <p>10 €</p>
-            </div>
-            <div className="comidaPrecio">
-              <p>Fabada asturiana</p>
-              <p>12 €</p>
-            </div>
-            <div className="comidaPrecio">
-              <p>Tortos típicos</p>
-              <p>9 €</p>
-            </div>
-            <div className="comidaPrecio">
-              <p>Huevos rotos con jamón</p>
-              <p>12 €</p>
-            </div>
-            <div className="comidaPrecio">
-              <p>
-                Alitas de pollo / <span className="amarillo">F</span>ritas o{" "}
-                <span className="amarillo">B</span>arbacoa
+              <p className="nombreComidas">
+                LTC / <span className="amarillo">L</span>echuga, tomate y
+                cebolla
               </p>
-              <p>9 €</p>
+              <p>7 €</p>
             </div>
+            <p className="comidaIngles nombreComidas">
+              (Lettuce, tomato and onion)
+            </p>
+            <div className="comidaPrecio">
+              <p className="nombreComidas">
+                Ensalada mixta / <span className="amarillo">L</span>echuga,
+                tomate, cebolla, zanahoria, bonito, espárrago y huevo.
+              </p>
+              <p>11 €</p>
+            </div>
+            <p className="comidaIngles nombreComidas">
+              (Lettuce, tomato, onion, carrot, tuna, asparagus and hard-boiled
+              eggs)
+            </p>
+            <div className="comidaPrecio">
+              <p className="nombreComidas">
+                Ensalada templada / <span className="amarillo">S</span>etas,
+                lechuga, tomate y queso de cabra.
+              </p>
+              <p>15 €</p>
+            </div>
+            <p className="comidaIngles nombreComidas">
+              (Mushrooms, lettuce, tomato and goat cheese)
+            </p>
+            <div className="comidaPrecio">
+              <p className="nombreComidas">
+                Ensalada del cantábrico / <span className="amarillo">A</span>
+                nchoas, pimiento asado y queso vidiago.
+              </p>
+              <p>16 €</p>
+            </div>
+            <p className="comidaIngles nombreComidas">
+              (Anchovies, roasted pepper and Vidiago cheese)
+            </p>
           </div>
         </div>
       </Box>
