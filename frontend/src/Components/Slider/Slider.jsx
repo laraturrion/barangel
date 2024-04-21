@@ -3,18 +3,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Slider.css";
 import { Navigation } from "swiper/modules";
-import RacionesModal from "../Modales/RacionesModal";
 import { useState } from "react";
 import PlatosLatinosModal from "../Modales/PlatosLatinosModal";
 import EnsaladasModal from "../Modales/EnsaladasModal";
 
-
 export default function Slider() {
-
-  const [openRaciones, setOpenRaciones] = useState(false);
-  const handleOpenRaciones = () => setOpenRaciones(true);
-  const handleCloseRaciones = () => setOpenRaciones(false);
-
   const [openPlatosLatinos, setOpenPlatosLatinos] = useState(false);
   const handleOpenPlatosLatinos = () => setOpenPlatosLatinos(true);
   const handleClosePlatosLatinos = () => setOpenPlatosLatinos(false);
@@ -31,11 +24,6 @@ export default function Slider() {
         modules={[Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide onClick={handleOpenRaciones}>
-          <img src="../../src/assets/raciones.jpg" alt="" />
-          <p>RACIONES</p>
-        </SwiperSlide>
-        <RacionesModal open={openRaciones} handleClose={handleCloseRaciones} />
         <SwiperSlide>
           <img src="../../src/assets/platosCombinados.jpg" alt="" />
           <p>PLATOS COMBINADOS</p>
@@ -44,7 +32,10 @@ export default function Slider() {
           <img src="../../src/assets/platosLatinos.jpg" alt="" />
           <p>PLATOS LATINOS</p>
         </SwiperSlide>
-        <PlatosLatinosModal open={openPlatosLatinos} handleClose={handleClosePlatosLatinos} />
+        <PlatosLatinosModal
+          open={openPlatosLatinos}
+          handleClose={handleClosePlatosLatinos}
+        />
         <SwiperSlide>
           <img src="../../src/assets/hamburguesas.jpg" alt="" />
           <p>HAMBURGUESAS</p>
@@ -54,7 +45,7 @@ export default function Slider() {
           <p>PLATOS INFANTILES</p>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../../src/assets/paraPicar.jpg" alt="" />
+          <img src="../../src/assets/raciones.jpg" alt="" />
           <p>PARA PICAR</p>
         </SwiperSlide>
         <SwiperSlide>
@@ -65,7 +56,10 @@ export default function Slider() {
           <img src="../../src/assets/ensaladas.jpg" alt="" />
           <p>ENSALADAS</p>
         </SwiperSlide>
-        <EnsaladasModal open={openEnsaladas} handleClose={handleCloseEnsaladas} />
+        <EnsaladasModal
+          open={openEnsaladas}
+          handleClose={handleCloseEnsaladas}
+        />
         <SwiperSlide>
           <img src="../../src/assets/revueltos.jpg" alt="" />
           <p>REVUELTOS</p>
