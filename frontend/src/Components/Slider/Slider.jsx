@@ -6,11 +6,21 @@ import { Navigation } from "swiper/modules";
 import { useState } from "react";
 import PlatosLatinosModal from "../Modales/PlatosLatinosModal";
 import EnsaladasModal from "../Modales/EnsaladasModal";
+import PlatosInfantilesModal from "../Modales/PlatosInfantilesModal";
+import ParaPicarModal from "../Modales/ParaPicarModal";
 
 export default function Slider() {
   const [openPlatosLatinos, setOpenPlatosLatinos] = useState(false);
   const handleOpenPlatosLatinos = () => setOpenPlatosLatinos(true);
   const handleClosePlatosLatinos = () => setOpenPlatosLatinos(false);
+
+  const [openInfantiles, setOpenInfantiles] = useState(false);
+  const handleOpenInfantiles = () => setOpenInfantiles(true);
+  const handleCloseInfantiles = () => setOpenInfantiles(false);
+
+  const [openParaPicar, setOpenParaPicar] = useState(false);
+  const handleOpenParaPicar = () => setOpenParaPicar(true);
+  const handleCloseParaPicar = () => setOpenParaPicar(false);
 
   const [openEnsaladas, setOpenEnsaladas] = useState(false);
   const handleOpenEnsaladas = () => setOpenEnsaladas(true);
@@ -40,14 +50,22 @@ export default function Slider() {
           <img src="../../src/assets/hamburguesas.jpg" alt="" />
           <p>HAMBURGUESAS</p>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide onClick={handleOpenInfantiles}>
           <img src="../../src/assets/platosInfantiles.jpg" alt="" />
           <p>PLATOS INFANTILES</p>
         </SwiperSlide>
-        <SwiperSlide>
+        <PlatosInfantilesModal
+          open={openInfantiles}
+          handleClose={handleCloseInfantiles}
+        />
+        <SwiperSlide onClick={handleOpenParaPicar}>
           <img src="../../src/assets/raciones.jpg" alt="" />
           <p>PARA PICAR</p>
         </SwiperSlide>
+        <ParaPicarModal
+          open={openParaPicar}
+          handleClose={handleCloseParaPicar}
+        />
         <SwiperSlide>
           <img src="../../src/assets/cazuelas.jpg" alt="" />
           <p>CAZUELAS</p>

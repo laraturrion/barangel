@@ -57,3 +57,33 @@
 .amarillo {
   color: #e8910e;
 }
+
+.subtituloComida {
+  margin-bottom: 30px;
+  text-align: center;
+  color: rgba(53, 53, 53, 0.801);
+}
+
+.preciosParaPicar {
+  display: flex;
+  gap: 45px;
+}
+
+.paraPicarDisplay {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+}
+
+.paraPicarDisplay .comidaIngles {
+  margin: 0 0 15px 0;
+}
+
+@media (max-width: 1600px) {
+  .preciosParaPicar {
+    gap: 30px;
+  }
+  .paraPicarDisplay {
+    width: 18vw;
+  }
+}
