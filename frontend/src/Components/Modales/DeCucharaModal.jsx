@@ -16,7 +16,7 @@ const style = {
   padding: 0,
 };
 
-export default function PostresModal({ open, handleClose }) {
+export default function DeCucharaModal({ open, handleClose }) {
   return (
     <Modal
       open={open}
@@ -27,40 +27,35 @@ export default function PostresModal({ open, handleClose }) {
     >
       <Box sx={style}>
         <div className="containerModal">
-          <p className="tituloModal">POSTRES</p>
+          <p className="tituloModal">DE CUCHARA</p>
           <p className="tituloInglesModal">
-            ⎯ <span className="amarillo">Seafood</span> ⎯
+            ⎯ <span className="amarillo">Spoon Dishes</span> ⎯
           </p>
           <div className="precios">
             <div className="comidaPrecio">
-              <p className="nombreComidas">Tarta de la abuela</p>
-              <p>4,50 €</p>
-            </div>
-            <p className="comidaIngles nombreComidas">(Cookie, custard and chocolate cake)</p>
-            <div className="comidaPrecio">
-              <p className="nombreComidas">Arroz con leche</p>
-              <p>4 €</p>
-            </div>
-            <p className="comidaIngles nombreComidas">(Rice pudding)</p>
-            <div className="comidaPrecio">
-              <p className="nombreComidas">Tarta de oreo</p>
-              <p>5 €</p>
+              <p className="nombreComidas"> Fabada</p>
+              <p>13 €</p>
             </div>
             <p className="comidaIngles nombreComidas">
-              (Oreo Cake)
+              (Traditional Asturian stew)
             </p>
             <div className="comidaPrecio">
-              <p className="nombreComidas">Tarta de Queso</p>
-              <p>4,5 €</p>
+              <p className="nombreComidas">Sopa de Marisco</p>
+              <p>10 €</p>
             </div>
-            <p className="comidaIngles nombreComidas">(Cheesecake)</p>
+            <p className="comidaIngles nombreComidas">(Seafood Soup)</p>
             <div className="comidaPrecio">
-              <p className="nombreComidas">Flan de Coco</p>
-              <p>4 €</p>
+              <p className="nombreComidas">Pote</p>
+              <p>13 €</p>
             </div>
             <p className="comidaIngles nombreComidas">
-              (Coconut Flan)
+              (Fabada with potatoes adn cabbage)
             </p>
+            <div className="comidaPrecio">
+              <p className="nombreComidas">Sopa de hígado</p>
+              <p>10 €</p>
+            </div>
+            <p className="comidaIngles nombreComidas">(Liver soup)</p>
           </div>
         </div>
       </Box>
@@ -68,7 +63,7 @@ export default function PostresModal({ open, handleClose }) {
   );
 }
 
-PostresModal.propTypes = {
+DeCucharaModal.propTypes = {
   open: PropTypes.bool.isRequired,
   handleClose: PropTypes.func.isRequired,
 };
