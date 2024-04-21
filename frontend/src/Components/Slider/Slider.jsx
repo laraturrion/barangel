@@ -8,6 +8,8 @@ import PlatosLatinosModal from "../Modales/PlatosLatinosModal";
 import EnsaladasModal from "../Modales/EnsaladasModal";
 import PlatosInfantilesModal from "../Modales/PlatosInfantilesModal";
 import ParaPicarModal from "../Modales/ParaPicarModal";
+import CazuelasModal from "../Modales/CazuelasModal";
+import PlatosVeganosModal from "../Modales/PlatosVeganosModal";
 
 export default function Slider() {
   const [openPlatosLatinos, setOpenPlatosLatinos] = useState(false);
@@ -22,9 +24,17 @@ export default function Slider() {
   const handleOpenParaPicar = () => setOpenParaPicar(true);
   const handleCloseParaPicar = () => setOpenParaPicar(false);
 
+  const [openCazuelas, setOpenCazuelas] = useState(false);
+  const handleOpenCazuelas = () => setOpenCazuelas(true);
+  const handleCloseCazuelas = () => setOpenCazuelas(false);
+
   const [openEnsaladas, setOpenEnsaladas] = useState(false);
   const handleOpenEnsaladas = () => setOpenEnsaladas(true);
   const handleCloseEnsaladas = () => setOpenEnsaladas(false);
+
+  const [openPlatosVeganos, setOpenPlatosVeganos] = useState(false);
+  const handleOpenPlatosVeganos = () => setOpenPlatosVeganos(true);
+  const handleClosePlatosVeganos = () => setOpenPlatosVeganos(false);
 
   return (
     <div>
@@ -66,10 +76,11 @@ export default function Slider() {
           open={openParaPicar}
           handleClose={handleCloseParaPicar}
         />
-        <SwiperSlide>
+        <SwiperSlide onClick={handleOpenCazuelas}>
           <img src="../../src/assets/cazuelas.jpg" alt="" />
           <p>CAZUELAS</p>
         </SwiperSlide>
+        <CazuelasModal open={openCazuelas} handleClose={handleCloseCazuelas} />
         <SwiperSlide onClick={handleOpenEnsaladas}>
           <img src="../../src/assets/ensaladas.jpg" alt="" />
           <p>ENSALADAS</p>
@@ -82,10 +93,14 @@ export default function Slider() {
           <img src="../../src/assets/revueltos.jpg" alt="" />
           <p>REVUELTOS</p>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide onClick={handleOpenPlatosVeganos}>
           <img src="../../src/assets/platosVeganos.jpg" alt="" />
           <p>PLATOS VEGANOS</p>
         </SwiperSlide>
+        <PlatosVeganosModal
+          open={openPlatosVeganos}
+          handleClose={handleClosePlatosVeganos}
+        />
         <SwiperSlide>
           <img src="../../src/assets/deCuchara.jpg" alt="" />
           <p>DE CUCHARA</p>
