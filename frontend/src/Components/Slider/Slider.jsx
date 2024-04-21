@@ -10,6 +10,7 @@ import PlatosInfantilesModal from "../Modales/PlatosInfantilesModal";
 import ParaPicarModal from "../Modales/ParaPicarModal";
 import CazuelasModal from "../Modales/CazuelasModal";
 import PlatosVeganosModal from "../Modales/PlatosVeganosModal";
+import CarnesModal from "../Modales/CarnesModal";
 
 export default function Slider() {
   const [openPlatosLatinos, setOpenPlatosLatinos] = useState(false);
@@ -35,6 +36,10 @@ export default function Slider() {
   const [openPlatosVeganos, setOpenPlatosVeganos] = useState(false);
   const handleOpenPlatosVeganos = () => setOpenPlatosVeganos(true);
   const handleClosePlatosVeganos = () => setOpenPlatosVeganos(false);
+
+  const [openCarnes, setOpenCarnes] = useState(false);
+  const handleOpenCarnes = () => setOpenCarnes(true);
+  const handleCloseCarnes = () => setOpenCarnes(false);
 
   return (
     <div>
@@ -113,10 +118,11 @@ export default function Slider() {
           <img src="../../src/assets/platoEspecial.jpg" alt="" />
           <p>PLATO ESPECIAL</p>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide onClick={handleOpenCarnes}>
           <img src="../../src/assets/carnes.jpg" alt="" />
           <p>CARNES</p>
         </SwiperSlide>
+        <CarnesModal open={openCarnes} handleClose={handleCloseCarnes} />
         <SwiperSlide>
           <img src="../../src/assets/postres.jpg" alt="" />
           <p>POSTRES</p>
