@@ -3,6 +3,9 @@
   color: white;
 }
 
+.containerContacto{
+  margin-bottom: 50px;
+}
 .cabeceraContacto {
   margin-top: 10px;
   text-align: center;
@@ -13,10 +16,6 @@
   font-size: 20px;
 }
 
-.redesContacto {
-  margin-top: 10px;
-  text-align: center;
-}
 
 .telefonoContacto {
   margin-top: 10px;
@@ -26,4 +25,11 @@
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .containerContacto {
+    padding: 10px; /* Reducir el espaciado interno en dispositivos móviles */
+    margin-bottom: 30px; /* Reducir el margen inferior en dispositivos móviles */
+  }
 }
