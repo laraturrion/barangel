@@ -27,6 +27,7 @@ export default function Contacto() {
            Abrimos todos los días de 11:00 a 00:00, miercoles cerrado por descanso.
         </p>
       </div>
+      <div className="separacionFooter"></div>
       <Footer />
     </>
   );
