@@ -14,6 +14,7 @@ import PlatoEspecialModal from "../Modales/PlatoEspecialModal";
 import PescadosModal from "../Modales/PescadosModal";
 import DeCucharaModal from "../Modales/DeCucharaModal";
 import PostresModal from "../Modales/PostresModal";
+import VinosModal from "../Modales/VinosModal";
 
 export default function Slider() {
   const [openInfantiles, setOpenInfantiles] = useState(false);
@@ -56,6 +57,9 @@ export default function Slider() {
   const handleOpenPostres = () => setOpenPostres(true);
   const handleClosePostres = () => setOpenPostres(false);
 
+  const [openVinos, setOpenVinos] = useState(false);
+  const handleOpenVinos = () => setOpenVinos(true);
+  const handleCloseVinos = () => setOpenVinos(false);
 
   return (
     <div>
@@ -108,9 +112,11 @@ export default function Slider() {
           <img src="../../src/assets/deCuchara.jpg" alt="" />
           <p>DE CUCHARA</p>
         </SwiperSlide>
-        <DeCucharaModal open={openDeCuchara} handleClose ={handleCloseDeCuchara} />
-        
-  
+        <DeCucharaModal
+          open={openDeCuchara}
+          handleClose={handleCloseDeCuchara}
+        />
+
         <SwiperSlide onClick={handleOpenPescados}>
           <img src="../../src/assets/pescados.jpg" alt="" />
           <p>PESCADOS</p>
@@ -120,7 +126,10 @@ export default function Slider() {
           <img src="../../src/assets/platoEspecial.jpg" alt="" />
           <p>PLATO ESPECIAL</p>
         </SwiperSlide>
-        <PlatoEspecialModal open={openPlatoEspecial} handleClose={handleClosePLatoEspecial} />
+        <PlatoEspecialModal
+          open={openPlatoEspecial}
+          handleClose={handleClosePLatoEspecial}
+        />
         <SwiperSlide onClick={handleOpenCarnes}>
           <img src="../../src/assets/carnes.jpg" alt="" />
           <p>CARNES</p>
@@ -131,10 +140,11 @@ export default function Slider() {
           <p>POSTRES</p>
         </SwiperSlide>
         <PostresModal open={openPostres} handleClose={handleClosePostres} />
-        <SwiperSlide>
+        <SwiperSlide onClick={handleOpenVinos}>
           <img src="../../src/assets/vinos.jpg" alt="" />
           <p>VINOS</p>
         </SwiperSlide>
+        <VinosModal open={openVinos} handleClose={handleCloseVinos} />
       </Swiper>
     </div>
   );

@@ -10,7 +10,7 @@
   background-image: url("../../../src/assets/medioLogo.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center left;
   padding: 3vw 2vw;
   background-color: #F0F0F0;
 }
@@ -75,8 +75,31 @@
   width: 15vw;
 }
 
-.paraPicarDisplay .comidaIngles {
+.preciosVinos {
+  display: flex;
+  gap: 45px;
+}
+
+.vinosDisplay {
+  display: flex;
+  flex-direction: column;
+  width: 17.5vw;
+}
+
+.comidaInglesVinos {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  color: rgba(53, 53, 53, 0.801);
+}
+
+.paraPicarDisplay .comidaIngles, .vinosDisplay {
   margin: 0 0 15px 0;
+}
+.tituloVinos {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 1600px) {
@@ -85,5 +108,13 @@
   }
   .paraPicarDisplay {
     width: 18vw;
+  }
+
+  .preciosVinos {
+    gap: 30px;
+  }
+
+  .vinosDisplay {
+    width: 25vw;
   }
 }
