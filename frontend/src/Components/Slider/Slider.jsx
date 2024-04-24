@@ -145,20 +145,91 @@ export default function Slider() {
         </SwiperSlide>
         <VinosModal open={openVinos} handleClose={handleCloseVinos} />
       </Swiper>
-      
+
       <div className="slider-container">
-      <div className="categories">
-        <div className="category" onClick={handleOpenParaPicar}>
-          <img src="../../src/assets/raciones.jpg" alt="" />
-          <p>PARA PICAR</p>
-        </div>
-        <ParaPicarModal open={openParaPicar} handleClose={handleCloseParaPicar} />
-        <div className="category" onClick={handleOpenCazuelas}>
-          <img src="../../src/assets/cazuelas.jpg" alt="" />
-          <p>CAZUELAS</p>
-        </div>
-        <CazuelasModal open={openCazuelas} handleClose={handleCloseCazuelas} />
-        </div>
+        <div className="categories">
+          <div className="category" onClick={handleOpenParaPicar}>
+            <img src="../../src/assets/raciones.jpg" alt="" />
+            <p>PARA PICAR</p>
+          </div>
+          <ParaPicarModal
+            open={openParaPicar}
+            handleClose={handleCloseParaPicar}
+          />
+          <div className="category" onClick={handleOpenCazuelas}>
+            <img src="../../src/assets/cazuelas.jpg" alt="" />
+            <p>CAZUELAS</p>
+          </div>
+          <CazuelasModal
+            open={openCazuelas}
+            handleClose={handleCloseCazuelas}
+          />
+          <div className="category" onClick={handleOpenEnsaladas}>
+            <img src="../../src/assets/ensaladas.jpg" alt="" />
+            <p>ENSALADAS</p>
+</div>
+            <EnsaladasModal
+              open={openEnsaladas}
+              handleClose={handleCloseEnsaladas}
+            />
+            <div className="category" onClick={handleOpenInfantiles}>
+              <img src="../../src/assets/platosInfantiles.jpg" alt="" />
+              <p>PLATOS INFANTILES</p>
+            </div>
+            <PlatosInfantilesModal
+              open={openInfantiles}
+              handleClose={handleCloseInfantiles}
+            />
+
+            <div className="category" onClick={handleOpenPlatosVeganos}>
+              <img src="../../src/assets/platosVeganos.jpg" alt="" />
+              <p>PLATOS VEGANOS</p>
+            </div>
+            <PlatosVeganosModal
+              open={openPlatosVeganos}
+              handleClose={handleClosePlatosVeganos}
+            />
+            <div className="category" onClick={handleOpenDeCuchara}>
+              <img src="../../src/assets/deCuchara.jpg" alt="" />
+              <p>DE CUCHARA</p>
+            </div>
+            <DeCucharaModal
+              open={openDeCuchara}
+              handleClose={handleCloseDeCuchara}
+            />
+
+            <div className="category" onClick={handleOpenPescados}>
+              <img src="../../src/assets/pescados.jpg" alt="" />
+              <p>PESCADOS</p>
+            </div>
+            <PescadosModal
+              open={openPescados}
+              handleClose={handleClosePescados}
+            />
+            <div className="category" onClick={handleOpenPLatoEspecial}>
+              <img src="../../src/assets/platoEspecial.jpg" alt="" />
+              <p>PLATO ESPECIAL</p>
+            </div>
+            <PlatoEspecialModal
+              open={openPlatoEspecial}
+              handleClose={handleClosePLatoEspecial}
+            />
+            <div className="category" onClick={handleOpenCarnes}>
+              <img src="../../src/assets/carnes.jpg" alt="" />
+              <p>CARNES</p>
+            </div>
+            <CarnesModal open={openCarnes} handleClose={handleCloseCarnes} />
+            <div className="category" onClick={handleOpenPostres}>
+              <img src="../../src/assets/postres.jpg" alt="" />
+              <p>POSTRES</p>
+            </div>
+            <PostresModal open={openPostres} handleClose={handleClosePostres} />
+            <div className="category" onClick={handleOpenVinos}>
+              <img src="../../src/assets/vinos.jpg" alt="" />
+              <p>VINOS</p>
+            </div>
+            <VinosModal open={openVinos} handleClose={handleCloseVinos} />
+          </div>
       </div>
     </div>
   );
