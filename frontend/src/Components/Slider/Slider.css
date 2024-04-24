@@ -44,7 +44,7 @@
 .categories {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: auto auto 10vh auto;
   color: #fff;
   
 }
