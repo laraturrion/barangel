@@ -35,3 +35,54 @@
 .swiper-button-next {
   color: #e8910e;
 }
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: #fff;
+  
+}
+
+.category {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.category img {
+  width: 60vw;
+  height: 50vw;
+  object-fit: cover;
+  border: solid 1px white;
+  opacity: 35%;
+  filter: contrast(1.7);
+}
+
+.category p {
+  position: absolute;
+  font-size: 20px;
+  font-family: "Mohave", "Inter";
+  font-weight: bold;
+  top: 40%;
+  left: 35%;
+}
+
+
+@media screen and (min-width: 768px) {
+  .categories {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper {
+    display: none;
+  }
+}

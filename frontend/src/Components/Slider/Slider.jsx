@@ -77,7 +77,6 @@ export default function Slider() {
           open={openParaPicar}
           handleClose={handleCloseParaPicar}
         />
-
         <SwiperSlide onClick={handleOpenCazuelas}>
           <img src="../../src/assets/cazuelas.jpg" alt="" />
           <p>CAZUELAS</p>
@@ -146,6 +145,21 @@ export default function Slider() {
         </SwiperSlide>
         <VinosModal open={openVinos} handleClose={handleCloseVinos} />
       </Swiper>
+      
+      <div className="slider-container">
+      <div className="categories">
+        <div className="category" onClick={handleOpenParaPicar}>
+          <img src="../../src/assets/raciones.jpg" alt="" />
+          <p>PARA PICAR</p>
+        </div>
+        <ParaPicarModal open={openParaPicar} handleClose={handleCloseParaPicar} />
+        <div className="category" onClick={handleOpenCazuelas}>
+          <img src="../../src/assets/cazuelas.jpg" alt="" />
+          <p>CAZUELAS</p>
+        </div>
+        <CazuelasModal open={openCazuelas} handleClose={handleCloseCazuelas} />
+        </div>
+      </div>
     </div>
   );
 }

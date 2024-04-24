@@ -36,3 +36,9 @@
   color: white;
   font-family: "Inter", sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  .tituloLogo, .seccionNav {
+    font-size: 12px;
+  }
+}
