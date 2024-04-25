@@ -21,10 +21,12 @@
 }
 .localizacion {
   cursor: pointer;
+  margin-top:12px;
 }
 
 .logoInstagram {
   margin-right: 25px;
+  
 }
 
 .logoMapa,
