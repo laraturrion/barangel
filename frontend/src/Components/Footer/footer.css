@@ -32,3 +32,10 @@
   width: 15px;
   margin-right: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .logoInstagram {
+    margin-right: 10px;
+    /* Reduce el margen a 10px en dispositivos con ancho máximo de 600px */
+  }
+}
