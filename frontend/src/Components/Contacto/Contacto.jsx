@@ -20,7 +20,7 @@ export default function Contacto() {
           Nuestro acogedor ambiente y nuestro delicioso menú te esperan.
         </p>
         <p className="telefonoContacto">
-          No dudes en llamarnos al 984 51 71 16 para reservar
+          No dudes en llamarnos al 984 51 71 16  para reservar.
         </p>
 
         <p className="horario">
