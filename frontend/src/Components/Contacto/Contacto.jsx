@@ -10,21 +10,21 @@ export default function Contacto() {
       <FotoPortada />
       <div className="containerContacto">
         <p className="cabeceraContacto">
-          ¡Estamos emocionados de saber de ti! Ya sea que desees hacer una
-          reserva para una cena especial o simplemente quieras saber más sobre
-          nuestro menú, nuestro equipo está aquí para ayudarte. No dudes en
-          contactarnos a través de cualquiera de los métodos a continuación:
+          ¡Estamos emocionados de saber de ti! 
+          <br></br>
+
+          Disfruta de una excelente comida típica asturiana en Cangas de Onís.
         </p>
         <p className="visitanosContacto">
           Estamos ubicados en Av. Castilla, 18, 33550 Cangas de Onis, Asturias.
           Nuestro acogedor ambiente y nuestro delicioso menú te esperan.
         </p>
         <p className="telefonoContacto">
-          No dudes en llamarnos 984 51 71 16 para reservar
+          No dudes en llamarnos al 984 51 71 16 para reservar
         </p>
 
         <p className="horario">
-           Abrimos todos los días de 11:00 a 00:00, miercoles cerrado por descanso.
+           Abrimos todos los días de 10:00 a 00:00, miercoles cerrado por descanso.
         </p>
       </div>
       <div className="separacionFooter"></div>

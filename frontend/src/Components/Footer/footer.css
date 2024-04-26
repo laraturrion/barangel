@@ -27,12 +27,39 @@
 
 .logoInstagram {
   margin-right: 25px;
+  
 }
 
 .logoMapa,
 .logoTelefono {
   width: 15px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+   /* Reduce el margen a 10px en dispositivos con ancho máximo de 600px */
+  .Footer,
+  .footerIzquierdo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    bottom: auto;
+  }
+
+  .footerIzquierdo {
+    margin: 2vh auto;
+  }
+
+  .logoInstagram {
+    margin: auto auto 2vh auto;
+  }
+
+  .localizacion span,
+  .telefonoContacto span {
+    font-size: 3.5vw;
+  }
 }
 
 @media screen and (max-width: 768px) {

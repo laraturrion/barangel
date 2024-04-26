@@ -1,6 +1,8 @@
 import "./footer.css";
 import { Link } from "react-router-dom";
 export const Footer = () => {
+
+  const enlaceGoogleMaps= 'https://www.google.es/maps/place/Bar+Restaurante+Angel/@43.3482069,-5.1337541,17z/data=!4m7!3m6!1s0xd36216edcd5f09b:0x7138c354bbee3b0a!8m2!3d43.3482069!4d-5.1311792!10e2!16s%2Fg%2F11txpctkj7?entry=ttu'
   return (
     <>
       <section className="Footer">
