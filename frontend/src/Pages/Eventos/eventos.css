@@ -1,11 +1,12 @@
 .videoAngel video {
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 0;
   width: 90%;
   height: 70vh;
   object-fit: cover;
   display: block;
   border-radius: 5px;
+  
   
 }
 
