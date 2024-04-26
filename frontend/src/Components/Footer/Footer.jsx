@@ -25,7 +25,7 @@ export const Footer = () => {
               alt="Teléfono"
               className="logoTelefono"
             />
-            <span>984 51 71 16</span> {/* Texto junto al logo del teléfono */}
+            <span className="numeroTelefono">984 51 71 16</span> {/* Texto junto al logo del teléfono */}
           </div>
         </article>
         <article className="Instagram">
