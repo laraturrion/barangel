@@ -5,10 +5,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  max-width: 100vw;
+  width: 100%;
   position: absolute;
   bottom: 0;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .footerIzquierdo {
@@ -21,6 +22,7 @@
 }
 .localizacion {
   cursor: pointer;
+  color: white;
 }
 
 .logoInstagram {
@@ -31,4 +33,29 @@
 .logoTelefono {
   width: 15px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer,
+  .footerIzquierdo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    bottom: auto;
+  }
+
+  .footerIzquierdo {
+    margin: 2vh auto;
+  }
+
+  .logoInstagram {
+    margin: auto auto 2vh auto;
+  }
+
+  .localizacion span,
+  .telefonoContacto span {
+    font-size: 3.5vw;
+  }
 }

@@ -33,7 +33,7 @@
 
 @media only screen and (max-width: 600px) {
   .containerContacto {
-    padding: 10px; /* Reducir el espaciado interno en dispositivos móviles */
-    margin-bottom: 30px; /* Reducir el margen inferior en dispositivos móviles */
+    padding: 20px 40px;
+    margin-bottom: 10px;
   }
 }
