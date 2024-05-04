@@ -102,6 +102,10 @@
   margin-bottom: 5px;
 }
 
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  width: 90%;
+}
+
 @media (max-width: 1600px) {
   .preciosParaPicar {
     gap: 30px;
@@ -119,8 +123,12 @@
   }
 }
 
-@media (width: 600px) {
+@media (max-width: 600px) {
+
   .preciosParaPicar {
     flex-direction: column;
+  }
+  .paraPicarDisplay, .vinosDisplay {
+    width: 100%;
   }
 }

@@ -1,9 +1,10 @@
 import { Dialog } from "@mui/material";
 import PropTypes from "prop-types";
+import "../Modales/modal.css"
 
 function ParaPicarMovil({ open, handleClose }) {
   return (
-    <Dialog open={open} onClose={handleClose}>
+    <Dialog open={open} onClose={handleClose} className="dialogMovil">
       <div className="containerModal">
         <p className="tituloModal">PARA PICAR</p>
         <p className="tituloInglesModal">
@@ -52,8 +53,6 @@ function ParaPicarMovil({ open, handleClose }) {
             <p className="comidaIngles nombreComidas">
               (Eggs with mushrooms and shrimps)
             </p>
-          </div>
-          <div className="paraPicarDisplay">
             <div className="comidaPrecio">
               <p className="nombreComidas">Tabla de embutidos</p>
               <p>14 €</p>

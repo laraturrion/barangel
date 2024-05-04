@@ -1,17 +1,17 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import { useState } from "react";
-import EnsaladasModal from "../Modales/EnsaladasModal";
-import PlatosInfantilesModal from "../Modales/PlatosInfantilesModal";
-import CazuelasModal from "../Modales/CazuelasModal";
-import PlatosVeganosModal from "../Modales/PlatosVeganosModal";
-import CarnesModal from "../Modales/CarnesModal";
-import PlatoEspecialModal from "../Modales/PlatoEspecialModal";
-import PescadosModal from "../Modales/PescadosModal";
-import DeCucharaModal from "../Modales/DeCucharaModal";
-import PostresModal from "../Modales/PostresModal";
-import VinosModal from "../Modales/VinosModal";
 import ParaPicarMovil from "../ModalesMovil/ParaPicarMovil";
+import CarnesMovil from "../ModalesMovil/CarnesMovil";
+import PlatoEspecialMovil from "../ModalesMovil/PlatoEspecialMovil";
+import CazuelasMovil from "../ModalesMovil/CazuelasMovil";
+import EnsaladasMovil from "../ModalesMovil/EnsaladasMovil";
+import PlatosInfantilesMovil from "../ModalesMovil/PlatosInfantilesMovil";
+import PlatosVeganosMovil from "../ModalesMovil/PlatosVeganosMovil";
+import DeCucharaMovil from "../ModalesMovil/DeCucharaMovil";
+import PescadosMovil from "../ModalesMovil/PescadosMovil";
+import PostresMovil from "../ModalesMovil/PostresMovil";
+import VinosMovil from "../ModalesMovil/VinosMovil";
 
 export default function Slider() {
   const [openInfantiles, setOpenInfantiles] = useState(false);
@@ -74,7 +74,7 @@ export default function Slider() {
             <img src="../../src/assets/cazuelas.jpg" alt="" />
             <p>CAZUELAS</p>
           </div>
-          <CazuelasModal
+          <CazuelasMovil
             open={openCazuelas}
             handleClose={handleCloseCazuelas}
           />
@@ -82,7 +82,7 @@ export default function Slider() {
             <img src="../../src/assets/ensaladas.jpg" alt="" />
             <p>ENSALADAS</p>
           </div>
-          <EnsaladasModal
+          <EnsaladasMovil
             open={openEnsaladas}
             handleClose={handleCloseEnsaladas}
           />
@@ -90,7 +90,7 @@ export default function Slider() {
             <img src="../../src/assets/platosInfantiles.jpg" alt="" />
             <p>PLATOS INFANTILES</p>
           </div>
-          <PlatosInfantilesModal
+          <PlatosInfantilesMovil
             open={openInfantiles}
             handleClose={handleCloseInfantiles}
           />
@@ -99,7 +99,7 @@ export default function Slider() {
             <img src="../../src/assets/platosVeganos.jpg" alt="" />
             <p>PLATOS VEGANOS</p>
           </div>
-          <PlatosVeganosModal
+          <PlatosVeganosMovil
             open={openPlatosVeganos}
             handleClose={handleClosePlatosVeganos}
           />
@@ -107,7 +107,7 @@ export default function Slider() {
             <img src="../../src/assets/deCuchara.jpg" alt="" />
             <p>DE CUCHARA</p>
           </div>
-          <DeCucharaModal
+          <DeCucharaMovil
             open={openDeCuchara}
             handleClose={handleCloseDeCuchara}
           />
@@ -116,7 +116,7 @@ export default function Slider() {
             <img src="../../src/assets/pescados.jpg" alt="" />
             <p>PESCADOS</p>
           </div>
-          <PescadosModal
+          <PescadosMovil
             open={openPescados}
             handleClose={handleClosePescados}
           />
@@ -124,7 +124,7 @@ export default function Slider() {
             <img src="../../src/assets/platoEspecial.jpg" alt="" />
             <p>PLATO ESPECIAL</p>
           </div>
-          <PlatoEspecialModal
+          <PlatoEspecialMovil
             open={openPlatoEspecial}
             handleClose={handleClosePLatoEspecial}
           />
@@ -132,17 +132,17 @@ export default function Slider() {
             <img src="../../src/assets/carnes.jpg" alt="" />
             <p>CARNES</p>
           </div>
-          <CarnesModal open={openCarnes} handleClose={handleCloseCarnes} />
+          <CarnesMovil open={openCarnes} handleClose={handleCloseCarnes} />
           <div className="category" onClick={handleOpenPostres}>
             <img src="../../src/assets/postres.jpg" alt="" />
             <p>POSTRES</p>
           </div>
-          <PostresModal open={openPostres} handleClose={handleClosePostres} />
+          <PostresMovil open={openPostres} handleClose={handleClosePostres} />
           <div className="category" onClick={handleOpenVinos}>
             <img src="../../src/assets/vinos.jpg" alt="" />
             <p>VINOS</p>
           </div>
-          <VinosModal open={openVinos} handleClose={handleCloseVinos} />
+          <VinosMovil open={openVinos} handleClose={handleCloseVinos} />
         </div>
       </div>
     </div>
