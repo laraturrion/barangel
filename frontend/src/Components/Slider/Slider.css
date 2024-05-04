@@ -73,16 +73,3 @@
   top: 40%;
   left: 35%;
 }
-
-
-@media screen and (min-width: 768px) {
-  .categories {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .swiper {
-    display: none;
-  }
-}

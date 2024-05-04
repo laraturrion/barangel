@@ -118,3 +118,9 @@
     width: 25vw;
   }
 }
+
+@media (width: 600px) {
+  .preciosParaPicar {
+    flex-direction: column;
+  }
+}
